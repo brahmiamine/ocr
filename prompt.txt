@@ -1,0 +1,27 @@
+Analyse le texte suivant pour extraire les informations et retourne uniquement le JSON au format strict ci-dessous. 
+Ne retourne rien d'autre que le JSON, sans explication, commentaire ou texte supplémentaire. 
+Si une information manque, remplis les champs avec des valeurs par défaut :
+- Pour les chaînes de caractères : "".
+- Pour les nombres : 0 ou 0.0.
+- Pour les tableaux : [].
+
+Voici le format JSON strict attendu :
+
+```json
+{
+  "numero_commande": "",
+  "date_livraison": "",
+  "total_ttc": "",
+  "carton_total": 0,
+  "articles": [
+    {
+      "article": "",
+      "ean": "",
+      "libelle": "",
+      "quantite_unite": "",
+      "quantite_carton": "",
+      "quantite_total": "",
+      "prix_hts": 0.0
+    }
+  ]
+}
